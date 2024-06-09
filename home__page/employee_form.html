@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Employee Information Form</h2>
+        <button type="button" id="backBtn">Back</button>
+        <form id="employeeForm">
+            <div class="name">
+            <input type="text" name="firstName" placeholder="First Name">
+            <input type="text" name="lastName" placeholder="Last Name">
+            </div>
+            <div class="det">
+            <input type="text" name="EmployeeID" placeholder="Employee ID">
+            <input type="text" name="doj" placeholder="Date of Joining (YYYY-MM-DD)">
+            </div>
+            <div class="age">
+            <input type="number" name="Age" placeholder="Age">
+            <input type="text" name="dob" placeholder="Date of Birth (YYYY-MM-DD)">
+            </div>
+            <input type="text" name="Designation" placeholder="Designation">
+            <div class="contact">
+            <input type="email" name="email" placeholder="Email">
+            <input type="text" name="Contact" placeholder="Contact Number">
+            </div>
+            <select name="gender">
+                <option value="" disabled selected>Select Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+           
+           
+            <input type="text" name="Address1" placeholder="Address Line 1">
+            <input type="text" name="Address2" placeholder="Address Line 2">
+            
+            <div class="input-container">
+                <label for="section">SECTION</label>
+                <input type="text" id="section" name="Section" placeholder="Ex. Hardware or Software">
+            </div>
+            <div class="input-container">
+                <label for="unit">UNIT</label>
+                <input type="text" id="unit" name="Unit" placeholder="Ex. Mine 1 or Mine 2">
+            </div>
+            
+            <div class="buttons">
+                <input type="submit" value="Submit">
+                <button type="button" id="cancelBtn">Cancel</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="form.js"></script>
+</body>
+</html>

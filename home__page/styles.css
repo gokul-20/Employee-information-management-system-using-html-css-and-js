@@ -1,0 +1,157 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.name{
+        display: flex;
+}
+.name input[type="text"] {
+    flex: 1; 
+    margin-right: 10px; 
+}
+
+.age {
+    display: flex;
+}
+
+.age input[type="number"],
+.age input[type="text"] {
+    flex: 1; 
+    margin-right: 10px; 
+}
+
+.det{
+        display: flex;
+}
+.det input[type="text"] {
+    flex: 1; 
+    margin-right: 10px; 
+}
+
+.contact{
+    display: flex;
+}
+.contact input[type="email"],
+.contact input[type="text"]{
+    flex: 1;
+    margin-right: 10px;
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.input-container label {
+    width: 55px; /* Adjust width as needed */
+    margin-right: 10px;
+    font-size: small;
+}
+
+.input-container input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+h2 {
+    text-align: center;
+}
+
+form {
+    margin-top: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type="submit"],
+#cancelBtn {
+    width: 48%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 1% 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover,
+#cancelBtn:hover {
+    background-color: #45a049;
+
+}
+
+#backBtn{
+    background-color: #45a049;
+    border-radius: 4px;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+}
+
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+#cancelBtn {
+    background-color: #fff;
+    color: #333;
+    border: 1px solid #ccc;
+}
+
+#cancelBtn:hover {
+    background-color: #f2f2f2;
+}
+
+.homepage-buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.homepage-buttons button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.employee {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
