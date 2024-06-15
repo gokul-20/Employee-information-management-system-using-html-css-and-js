@@ -15,13 +15,13 @@ function fetchEmployeeData() {
 
                 const employeeHeader = document.createElement('div');
                 employeeHeader.classList.add('employee-header');
-                employeeHeader.textContent = `${employee.firstName} ${employee.lastName}`;
+                employeeHeader.textContent = `${employee.FirstName} ${employee.LastName}`;
 
                 const employeeData = document.createElement('div');
                 employeeData.classList.add('employee-data');
 
                 for (const key in employee) {
-                    if (employee.hasOwnProperty(key) && key !== 'firstName' && key !== 'lastName') {
+                    if (employee.hasOwnProperty(key) && key !== 'FirstName' && key !== 'LastName') {
                         const dataItem = document.createElement('div');
                         dataItem.classList.add('employee-data-item');
 
@@ -43,10 +43,6 @@ function fetchEmployeeData() {
                 const buttonContainer = document.createElement('div');
                 buttonContainer.classList.add('button-container');
 
-                const updateButton = document.createElement('button');
-                updateButton.textContent = 'Update';
-                updateButton.classList.add('update-button');
-
                 const deleteButton = document.createElement('button');
                 deleteButton.textContent = 'Delete';
                 deleteButton.classList.add('delete-button');
@@ -57,7 +53,7 @@ function fetchEmployeeData() {
 
                     const confirmDeleteBtn = document.getElementById('confirmDeleteBtn');
                     confirmDeleteBtn.onclick = function() {
-                        deleteEmployee(employee.id, employeeContainer);
+                        deleteEmployee(employee, employeeContainer);
                         confirmationDialog.classList.add('hidden');
                     };
 
@@ -67,7 +63,6 @@ function fetchEmployeeData() {
                     };
                 });
 
-                buttonContainer.appendChild(updateButton);
                 buttonContainer.appendChild(deleteButton);
 
                 employeeContainer.appendChild(employeeHeader);
@@ -83,14 +78,15 @@ function fetchEmployeeData() {
         });
 }
 
-function deleteEmployee(employeeId, employeeContainer) {
+function deleteEmployee(employee, employeeContainer) {
+    const employeeId = employee.id;
     fetch(`http://localhost:3000/employees/${employeeId}`, {
         method: 'DELETE'
     })
     .then(response => {
         if (response.ok) {
-            console.log('Employee deleted successfully:', employeeId);
             employeeContainer.remove();
+            console.log('Employee deleted successfully:', employeeId);
         } else {
             console.error('Error deleting employee:', response.statusText);
             alert('Error deleting employee. Please try again later.');

@@ -3,6 +3,15 @@
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 20px;
 }
+h2 {
+    text-align: center; 
+    padding: 20px 0; 
+    background-color: #45a049 ; 
+    color: white; 
+    margin: flex;
+    margin-bottom: 30px; 
+    border-radius: 10px;
+}
 
 .employee-box {
     padding: 20px;
@@ -63,7 +72,6 @@
     background-color: #45a049;
 }
 
-/* Confirmation dialog styles */
 .confirmation-dialog {
     position: fixed;
     top: 0;
