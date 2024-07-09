@@ -7,7 +7,7 @@ function fetchEmployeeData() {
         .then(response => response.json())
         .then(data => {
             const employeeList = document.getElementById('employeeList');
-            employeeList.innerHTML = ''; // Clear existing content
+            employeeList.innerHTML = ''; 
 
             data.forEach(employee => {
                 const employeeContainer = document.createElement('div');

@@ -33,6 +33,23 @@
       "Address2": "",
       "Section": "Design",
       "Unit": "UI/UX"
+    },
+    {
+      "id": "461d",
+      "FirstName": "Gokul ",
+      "LastName": "R",
+      "EmployeeID": "0021",
+      "DOJ": "2023-01-12",
+      "Age": "21",
+      "DOB": "2003-04-26",
+      "Designation": "Frontend Developer",
+      "Email": "gokul04200326@gmail.com",
+      "Contact": "8939692608",
+      "gender": "Male",
+      "Address1": "34/89 Valluvar street ",
+      "Address2": "purasawalkkam, Chennai-600012",
+      "Section": "Software",
+      "Unit": ""
     }
   ]
 }
